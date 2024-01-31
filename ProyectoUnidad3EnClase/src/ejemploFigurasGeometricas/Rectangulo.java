@@ -1,45 +1,61 @@
 package ejemploFigurasGeometricas;
 
-public class Rectangulo {
-	
-	private int base;
-	private int altura;
+import ejerciciosdeclase.EnumFigura;
+import ejerciciosdeclase.FiguraGeometrica;
 
-	
-	public Rectangulo(int base, int altura) {
-		super();
-		this.base = base;
-		this.altura = altura;
-	}
+public class Rectangulo extends FiguraGeometrica{
+		int base; // Atributo que define la base de un rectángulo
+		int altura; // Atributo que define la altura de un rectángulo
 
-	public int getBase() {
-		return base;
-	}
+		public Rectangulo () {
+			this.tipoFigura=EnumFigura.POLIGONOS;
+		}
+		/**
+		 * Constructor de la clase Rectangulo
+		 * 
+		 * @param base   Parámetro que define la base de un rectángulo
+		 * @param altura Parámetro que define la altura de un rectángulo
+		 */
+		public Rectangulo(int base, int altura) {
+			this.base = base;
+			this.altura = altura;
+		}
 
-	public void setBase(int base) {
-		this.base = base;
-	}
-
-	public int getAltura() {
-		return altura;
-	}
-
-	public void setAltura(int altura) {
-		this.altura = altura;
-	}
-	
-	//Métodos funcionales
-	 public double calcularArea (int area) {
-	    	return base*altura;
-	    }
+		/**
+		 * Método que calcula y devuelve el área de un rectángulo como la multiplicación
+		 * de la base por la altura
+		 * 
+		 * @return Área de un rectángulo
+		 */
 		
-	 public double calcularPerimetro (int perimetro) {
-	    	return (base*altura)*2;
-	    }
+		
+		
+		@Override
+		public double calcularArea() {
+			return base * altura;
+		}
 
-	@Override
-	public String toString() {
-		return "Rectangulo [base=" + base + ", altura=" + altura + "]";
+		public int getBase() {
+			return base;
+		}
+		public void setBase(int base) {
+			this.base = base;
+		}
+		public int getAltura() {
+			return altura;
+		}
+		public void setAltura(int altura) {
+			this.altura = altura;
+		}
+		/**
+		 * Método que calcula y devuelve el perímetro de un rectángulo como (2 * base) +
+		 * (2 * altura)
+		 * 
+		 * @return Perímetro de un rectángulo
+		 */
+		
+		@Override
+		public double calcularPerimetro() {
+			return (2 * base) + (2 * altura);
+		}
 	}
-
-}
