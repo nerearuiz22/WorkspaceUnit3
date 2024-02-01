@@ -1,8 +1,5 @@
 package ejemploFigurasGeometricas;
 
-import ejerciciosdeclase.EnumFigura;
-import ejerciciosdeclase.FiguraGeometrica;
-
 public class Rectangulo extends FiguraGeometrica{
 		int base; // Atributo que define la base de un rectángulo
 		int altura; // Atributo que define la altura de un rectángulo

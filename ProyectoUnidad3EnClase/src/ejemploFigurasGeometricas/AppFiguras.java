@@ -1,9 +1,4 @@
-package ejerciciosdeclase;
-
-import ejemploFigurasGeometricas.Circulo;
-import ejemploFigurasGeometricas.Cuadrado;
-import ejemploFigurasGeometricas.Rectangulo;
-import ejemploFigurasGeometricas.TrianguloRectangulo;
+package ejemploFigurasGeometricas;
 
 public class AppFiguras {
 
@@ -32,7 +27,11 @@ public class AppFiguras {
 		
 	
 		arrayFiguras[0]= cir;
-		arrayFiguras[1]= new FiguraGeometrica ();
+		
+		//UNA CLASE ABSTRACTA NO SE PUEDE HACER OBJETOS
+		//arrayFiguras[1]= new FiguraGeometrica ();
+		
+		arrayFiguras[1]= new Cuadrado (5);
 		arrayFiguras[2]= new Rectangulo (4,8);
 		arrayFiguras[3]= new Cuadrado (5);
 		arrayFiguras[4]= new TrianguloRectangulo (3,7);

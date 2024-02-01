@@ -1,8 +1,5 @@
 package ejemploFigurasGeometricas;
 
-import ejerciciosdeclase.EnumFigura;
-import ejerciciosdeclase.FiguraGeometrica;
-
 //EXTENDS --> DECLARAS LA HERENCIA DE OTRA CLASE
 //MÉTODOS IGUALES QUE LA CLASE PADRE
 

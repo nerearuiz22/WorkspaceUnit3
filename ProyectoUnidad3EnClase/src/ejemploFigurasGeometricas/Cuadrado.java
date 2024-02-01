@@ -1,8 +1,5 @@
 package ejemploFigurasGeometricas;
 
-import ejerciciosdeclase.EnumFigura;
-import ejerciciosdeclase.FiguraGeometrica;
-
 public class Cuadrado extends FiguraGeometrica{
 		int lado; // Atributo que define el lado de un cuadrado
 		private EnumFigura tipoFigura;
