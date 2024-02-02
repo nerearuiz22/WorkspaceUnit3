@@ -1,5 +1,9 @@
 package ejercicioespanol.ejercicio29;
 
-public class Númerica {
+public class Númerica  {
+	
+	
+	
+	
 
 }
